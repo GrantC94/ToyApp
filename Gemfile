@@ -6,25 +6,28 @@ git_source(:github) do |repo_name|
 end
 
 
-gem 'rails', '~> 5.1.4'
-gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
+gem 'rails', '5.1.4'
+gem 'puma', '3.9.1'
+gem 'sass-rails', '5.0.6'
+gem 'uglifier', '3.2.0'
+gem 'coffee-rails', '4.2.2'
 gem 'jquery-rails', '4.3.1'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
-
+gem 'turbolinks', '5.0.1'
+gem 'jbuilder', '2.7.0'
+gem 'coffee-script-source', '1.8.0'
 
 group :development, :test do
-  gem 'sqlite3'
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3', '1.3.13'
+  gem 'byebug', '9.0.6', platforms: :mri
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console', '3.5.1'
+  gem 'listen', '3.0.8'
+  gem 'spring', '2.0.2'
+  gem 'spring-watcher-listen', '2.0.1'
 end
 
 group :production do
